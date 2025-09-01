@@ -1,0 +1,52 @@
+
+  .container-fluid {
+    margin-top: 20px;
+}
+.left-column {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+}
+.right-column {
+    padding: 20px;
+}
+
+#main-contentss {
+    background: url(/img/index.jpg) no-repeat center center/cover!important;
+    height: 100vh; /* 100% của viewport height */
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.greeting {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.waiting-message {
+    font-size: 18px;
+}
+#main-content {
+    background: url(css/img/index.jpg) no-repeat center center/cover!important;
+    height: 100vh; /* 100% của viewport height */
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.greeting {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.waiting-message {
+    font-size: 18px;
+}

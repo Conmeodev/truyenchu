@@ -1,0 +1,1235 @@
+@import url("/assets/css/font.css?v=66");
+
+:root.toi {
+  /* biến màu sắc chính */
+  --background: rgba(255, 255, 255, .1);
+  --color: #b0bbc7;
+  --color2: rgba(255, 255, 255, .75);
+  --primary-rgb: 77, 238, 234;
+  --background-rgb: 18, 55, 61;
+  --secondary-rgb: 249, 248, 113;
+
+  /* gradient và màu nền */
+  --main-gradient-bg: radial-gradient(circle, rgb(var(--background-rgb)) 0%, #121923, #121923 100%);
+  --primary-bg-color: rgb(var(--primary-rgb));
+  --primary-transparent: rgba(var(--primary-rgb), .2);
+
+  /* các biến opacity */
+  --primary-01: rgba(var(--primary-rgb), .1);
+  --primary-02: rgba(var(--primary-rgb), .2);
+  --primary-03: rgba(var(--primary-rgb), .3);
+  --primary-05: rgba(var(--primary-rgb), .5);
+  --primary01: rgba(var(--primary-rgb), .1);
+  --primary02: rgba(var(--primary-rgb), .2);
+  --primary03: rgba(var(--primary-rgb), .3);
+  --primary04: rgba(var(--primary-rgb), .4);
+  --primary05: rgba(var(--primary-rgb), .5);
+  --primary06: rgba(var(--primary-rgb), .6);
+  --primary07: rgba(var(--primary-rgb), .7);
+  --primary08: rgba(var(--primary-rgb), .8);
+  --primary09: rgba(var(--primary-rgb), .9);
+  --primary005: rgba(var(--primary-rgb), .05);
+  --secondary-02: rgba(var(--secondary-rgb), .2);
+  --secondary-05: rgba(var(--secondary-rgb), .5);
+
+
+  /* màu sắc theme */
+  --dark-body: #161b25;
+  --dark-theme: #1e232d;
+  --dark: #191f2b;
+  --light: #17171c;
+  --muted: #9aa5b9;
+  --yellow: #ffc102;
+
+  /* gray scale */
+  --gray-100: #110f0f;
+  --gray-200: #17171c;
+  --gray-300: #393946;
+  --gray-500: #73738c;
+  --gray-900: #e3e3e8;
+
+  /* shadow và border */
+  --shadow: 0 0 4px rgba(255, 255, 255, .1);
+  --card-background: rgba(255, 255, 255, .1);
+  --border: rgba(var(--primary-rgb), .1);
+
+  /* breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+:root.sangne {
+  /* biến màu sắc chính - phiên bản tươi sáng */
+  --background: rgba(255, 255, 255, .9);
+  --color: #4a5568;
+  --color2: rgba(0, 0, 0, .85);
+  --primary-rgb: 66, 153, 225;
+  --background-rgb: 237, 242, 247;
+  --secondary-rgb: 246, 173, 85;
+
+  /* gradient và màu nền */
+  --main-gradient-bg: radial-gradient(circle, rgb(var(--background-rgb)) 0%, #edf2f7, #edf2f7 100%);
+  --primary-bg-color: rgb(var(--primary-rgb));
+  --primary-transparent: rgba(var(--primary-rgb), .2);
+
+  /* các biến opacity */
+  --primary-01: rgba(var(--primary-rgb), .1);
+  --primary-02: rgba(var(--primary-rgb), .2);
+  --primary-03: rgba(var(--primary-rgb), .3);
+  --primary-05: rgba(var(--primary-rgb), .5);
+  --primary01: rgba(var(--primary-rgb), .1);
+  --primary02: rgba(var(--primary-rgb), .2);
+  --primary03: rgba(var(--primary-rgb), .3);
+  --primary04: rgba(var(--primary-rgb), .4);
+  --primary05: rgba(var(--primary-rgb), .5);
+  --primary06: rgba(var(--primary-rgb), .6);
+  --primary07: rgba(var(--primary-rgb), .7);
+  --primary08: rgba(var(--primary-rgb), .8);
+  --primary09: rgba(var(--primary-rgb), .9);
+  --primary005: rgba(var(--primary-rgb), .05);
+  --secondary-02: rgba(var(--secondary-rgb), .2);
+  --secondary-05: rgba(var(--secondary-rgb), .5);
+
+  /* màu sắc theme */
+  --dark-body: #f7fafc;
+  --dark-theme: #ffffff;
+  --dark: #e2e8f0;
+  --light: #ffffff;
+  --muted: #a0aec0;
+  --yellow: #f6ad55;
+
+  /* gray scale - phiên bản sáng */
+  --gray-100: #f7fafc;
+  --gray-200: #edf2f7;
+  --gray-300: #e2e8f0;
+  --gray-400: #cbd5e0;
+  --gray-500: #a0aec0;
+  --gray-600: #718096;
+  --gray-700: #4a5568;
+  --gray-800: #2d3748;
+  --gray-900: #1a202c;
+
+  /* shadow và border */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --card-background: rgba(255, 255, 255, 0.95);
+  --border: rgba(66, 153, 225, 0.2);
+
+  /* các biến mới cho theme sáng */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --accent-color: #000000;
+  --success-color: #48bb78;
+  --warning-color: #ecc94b;
+  --error-color: #f56565;
+  --info-color: #4299e1;
+
+  /* breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+:root.mauhong {
+  /* biến màu sắc chính - phiên bản màu đỏ */
+  --background: rgba(255, 245, 245, 0.95);
+  --color: #4a2525;
+  --color2: rgba(90, 0, 0, 0.85);
+  --primary-rgb: 220, 53, 69;
+  --background-rgb: 255, 245, 245;
+  --secondary-rgb: 255, 193, 7;
+
+  /* gradient và màu nền */
+  --main-gradient-bg: radial-gradient(circle, rgb(var(--background-rgb)) 0%, #fff5f5, #fff5f5 100%);
+  --primary-bg-color: rgb(var(--primary-rgb));
+  --primary-transparent: rgba(var(--primary-rgb), 0.2);
+
+  /* các biến opacity */
+  --primary-01: rgba(var(--primary-rgb), 0.1);
+  --primary-02: rgba(var(--primary-rgb), 0.2);
+  --primary-03: rgba(var(--primary-rgb), 0.3);
+  --primary-05: rgba(var(--primary-rgb), 0.5);
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --secondary-02: rgba(var(--secondary-rgb), 0.2);
+  --secondary-05: rgba(var(--secondary-rgb), 0.5);
+
+  /* màu sắc theme */
+  --dark-body: #fff5f5;
+  --dark-theme: #ffffff;
+  --dark: #fed7d7;
+  --light: #ffffff;
+  --muted: #c53030;
+  --yellow: #f6ad55;
+
+  /* gray scale - phiên bản phù hợp với màu đỏ */
+  --gray-100: #fff5f5;
+  --gray-200: #fed7d7;
+  --gray-300: #feb2b2;
+  --gray-400: #fc8181;
+  --gray-500: #f56565;
+  --gray-600: #e53e3e;
+  --gray-700: #c53030;
+  --gray-800: #9b2c2c;
+  --gray-900: #742a2a;
+
+  /* shadow và border */
+  --shadow: 0 4px 6px rgba(220, 53, 69, 0.15);
+  --card-background: rgba(255, 255, 255, 0.98);
+  --border: rgba(220, 53, 69, 0.3);
+
+  /* các biến mới cho theme đỏ */
+  --text-primary: #9b2c2c;
+  --text-secondary: #c53030;
+  --accent-color: #000000;
+  --success-color: #38a169;
+  --warning-color: #ecc94b;
+  --error-color: #e53e3e;
+  --info-color: #3182ce;
+
+  /* breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 992px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+/* màu xanh lá */
+:root.mauxanhla {
+  /* biến màu sắc chính - phiên bản xanh lá */
+  --background: rgba(240, 255, 244, 0.95);
+  --color: #22543d;
+  --color2: rgba(0, 90, 30, 0.85);
+  --primary-rgb: 72, 187, 120;
+  --background-rgb: 240, 255, 244;
+  --secondary-rgb: 246, 173, 85;
+
+  /* gradient và màu nền */
+  --main-gradient-bg: radial-gradient(circle, rgb(var(--background-rgb)) 0%, #f0fff4, #f0fff4 100%);
+  --primary-bg-color: rgb(var(--primary-rgb));
+  --primary-transparent: rgba(var(--primary-rgb), 0.2);
+
+  /* các biến opacity */
+  --primary-01: rgba(var(--primary-rgb), 0.1);
+  --primary-02: rgba(var(--primary-rgb), 0.2);
+  --primary-03: rgba(var(--primary-rgb), 0.3);
+  --primary-05: rgba(var(--primary-rgb), 0.5);
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --secondary-02: rgba(var(--secondary-rgb), 0.2);
+  --secondary-05: rgba(var(--secondary-rgb), 0.5);
+
+  /* màu sắc theme */
+  --dark-body: #f0fff4;
+  --dark-theme: #ffffff;
+  --dark: #c6f6d5;
+  --light: #ffffff;
+  --muted: #38a169;
+  --yellow: #f6ad55;
+
+  /* gray scale - phiên bản phù hợp với màu xanh lá */
+  --gray-100: #f0fff4;
+  --gray-200: #c6f6d5;
+  --gray-300: #9ae6b4;
+  --gray-400: #68d391;
+  --gray-500: #48bb78;
+  --gray-600: #38a169;
+  --gray-700: #2f855a;
+  --gray-800: #276749;
+  --gray-900: #22543d;
+
+  /* shadow và border */
+  --shadow: 0 4px 6px rgba(72, 187, 120, 0.15);
+  --card-background: rgba(255, 255, 255, 0.98);
+  --border: rgba(72, 187, 120, 0.3);
+
+  /* các biến mới cho theme xanh lá */
+  --text-primary: #22543d;
+  --text-secondary: #2f855a;
+  --accent-color: #1f1f1f;
+  --success-color: #38a169;
+  --warning-color: #ecc94b;
+  --error-color: #e53e3e;
+  --info-color: #3182ce;
+}
+
+/* màu tím */
+:root.mautim {
+  /* biến màu sắc chính - phiên bản tím */
+  --background: rgba(250, 245, 255, 0.95);
+  --color: #44337a;
+  --color2: rgba(70, 0, 110, 0.85);
+  --primary-rgb: 128, 90, 213;
+  --background-rgb: 250, 245, 255;
+  --secondary-rgb: 246, 173, 85;
+
+  /* gradient và màu nền */
+  --main-gradient-bg: radial-gradient(circle, rgb(var(--background-rgb)) 0%, #faf5ff, #faf5ff 100%);
+  --primary-bg-color: rgb(var(--primary-rgb));
+  --primary-transparent: rgba(var(--primary-rgb), 0.2);
+
+  /* các biến opacity */
+  --primary-01: rgba(var(--primary-rgb), 0.1);
+  --primary-02: rgba(var(--primary-rgb), 0.2);
+  --primary-03: rgba(var(--primary-rgb), 0.3);
+  --primary-05: rgba(var(--primary-rgb), 0.5);
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --secondary-02: rgba(var(--secondary-rgb), 0.2);
+  --secondary-05: rgba(var(--secondary-rgb), 0.5);
+
+  /* màu sắc theme */
+  --dark-body: #faf5ff;
+  --dark-theme: #ffffff;
+  --dark: #e9d8fd;
+  --light: #ffffff;
+  --muted: #805ad5;
+  --yellow: #f6ad55;
+
+  /* gray scale - phiên bản phù hợp với màu tím */
+  --gray-100: #faf5ff;
+  --gray-200: #e9d8fd;
+  --gray-300: #d6bcfa;
+  --gray-400: #b794f4;
+  --gray-500: #805ad5;
+  --gray-600: #6b46c1;
+  --gray-700: #553c9a;
+  --gray-800: #44337a;
+  --gray-900: #322659;
+
+  /* shadow và border */
+  --shadow: 0 4px 6px rgba(128, 90, 213, 0.15);
+  --card-background: rgba(255, 255, 255, 0.98);
+  --border: rgba(128, 90, 213, 0.3);
+
+  /* các biến mới cho theme tím */
+  --text-primary: #44337a;
+  --text-secondary: #553c9a;
+  --accent-color: #000000;
+  --success-color: #38a169;
+  --warning-color: #ecc94b;
+  --error-color: #e53e3e;
+  --info-color: #3182ce;
+}
+
+/* màu trắng tinh khiết */
+:root {
+  /* biến màu sắc chính - phiên bản trắng */
+  --background: rgba(255, 255, 255, 0.95);
+  --color: #2d3748;
+  --color2: rgba(0, 0, 0, 0.85);
+  --primary-rgb: 74, 85, 104;
+  --background-rgb: 255, 255, 255;
+  --secondary-rgb: 160, 174, 192;
+
+  /* gradient và màu nền */
+  --main-gradient-bg: radial-gradient(circle, rgb(var(--background-rgb)) 0%, #ffffff, #ffffff 100%);
+  --primary-bg-color: rgb(var(--primary-rgb));
+  --primary-transparent: rgba(var(--primary-rgb), 0.2);
+
+  /* các biến opacity */
+  --primary-01: rgba(var(--primary-rgb), 0.1);
+  --primary-02: rgba(var(--primary-rgb), 0.2);
+  --primary-03: rgba(var(--primary-rgb), 0.3);
+  --primary-05: rgba(var(--primary-rgb), 0.5);
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --secondary-02: rgba(var(--secondary-rgb), 0.2);
+  --secondary-05: rgba(var(--secondary-rgb), 0.5);
+
+  /* màu sắc theme */
+  --dark-body: #ffffff;
+  --dark-theme: #f7fafc;
+  --dark: #e2e8f0;
+  --light: #ffffff;
+  --muted: #a0aec0;
+  --yellow: #d69e2e;
+
+  /* gray scale - phiên bản trắng đen */
+  --gray-100: #f7fafc;
+  --gray-200: #edf2f7;
+  --gray-300: #e2e8f0;
+  --gray-400: #cbd5e0;
+  --gray-500: #a0aec0;
+  --gray-600: #718096;
+  --gray-700: #4a5568;
+  --gray-800: #2d3748;
+  --gray-900: #1a202c;
+
+  /* shadow và border */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --card-background: rgba(255, 255, 255, 0.98);
+  --border: rgba(0, 0, 0, 0.1);
+
+  /* các biến mới cho theme trắng */
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --accent-color: #4a5568;
+  --success-color: #38a169;
+  --warning-color: #d69e2e;
+  --error-color: #e53e3e;
+  --info-color: #3182ce;
+}
+
+/* reset và base styles */
+* {
+  word-break: break-word;
+  font-family: xviet;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+/* tổng thể thanh scroll */
+::-webkit-scrollbar {
+  width: 10px;   /* độ rộng */
+  height: 10px;  /* cho thanh cuộn ngang */
+}
+
+/* phần track (nền) */
+::-webkit-scrollbar-track {
+  background: var(--secondary-02); 
+}
+
+/* phần thumb (nút kéo) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f5ff, #008cff);
+  border-radius: 10px;
+}
+
+/* hover vào thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00ffff, #0055ff);
+}
+a { color: var(--primary-bg-color); }
+textarea::-webkit-scrollbar { display: none; }
+hr {
+  margin: 7px 0;
+  border: 1px solid var(--primary02);
+}
+html {
+  background: var(--main-gradient-bg);
+  color: var(--color2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.disb {
+  display: block !important;
+}
+.disi {
+  display: inline !important;
+  width: unset !important;
+}
+.flex {
+  display: flex;
+}
+.trai {
+  text-align: left !important;
+}
+.chunho {
+  font-size: 0.8em;
+}
+.none { 
+  display: none;
+}
+.center {
+  text-align: center;
+  justify-content: center;
+}
+.max-w-select {
+  max-width: 286px;
+}
+body {
+  box-shadow: 0 0 5px var(--primary-bg-color);
+  background-color: var(--primary-01);
+  background-position: center 64px;
+  background-repeat: no-repeat;
+}
+
+/* component styles */
+.none { display: none; }
+
+header {
+  display: none;
+  background: var(--primary-bg-color);
+  color: var(--gray-900);
+  padding: 10px;
+  text-align: center;
+}
+
+.logo-text {
+  color: var(--card-background);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: var(--primary-01);
+  text-align: center;
+  position: relative;
+}
+.nav-menu:before{
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  inset-inline-start: 30%;
+  background: linear-gradient(45deg, transparent, var(--primary03), var(--primary06), var(--primary06), var(--primary03), transparent);
+  box-shadow: 0 8px 17px .0125px var(--primary-bg-color);
+}
+
+.nav-sub {
+  display: inline-block;
+  color: var(--color2);
+  background: var(--primary-02);
+  border: 1px solid var(--primary-01);
+  padding: 6px 10px;
+  margin: 5px 2px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-sub:hover {
+  background: var(--primary-bg-color);
+  color: var(--dark);
+}
+
+#search-tools { display: flex; gap: 5px; }
+#caidat {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 100vh;
+  overflow: scroll;
+}
+input {
+  padding: 5px;
+  border: 1px solid var(--primary-bg-color);
+  border-radius: 4px;
+  background: var(--main-gradient-bg);
+  color: var(--primary-bg-color);
+}
+
+
+button {
+  padding: 5px 10px;
+  background: var(--primary-transparent);
+  color: var(--primary-bg-color);
+  border: 1px solid var(--primary-01);
+  border-radius: 4px;
+  cursor: pointer;
+  /*margin-bottom: 7px;*/
+}
+
+.notication, .menu {
+  text-align: left;
+  position: relative;
+  line-height: 1.6;
+  padding: 10px;
+  margin: 10px;
+  background: rgb(var(--background-rgb));
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  color: var(--color2);
+}
+
+footer:before,.menu:before, .container:before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  top: 0;
+  background: linear-gradient(45deg, transparent, var(--primary-03), var(--primary-05), var(--primary-05), var(--primary-03), transparent);
+  inset-inline-start: 10%;
+  box-shadow: 0 8px 17px 0 var(--primary-bg-color);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.left, .right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+  margin-bottom: 10px;
+}
+
+.title, .title-form {
+  padding: 2px 3px;
+  color: var(--primary-bg-color);
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 1.7em;
+}
+.menu>.title {
+
+}
+.title2 { font-weight: bold; }
+.title a {color: var(--yellow);}
+
+.block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-auto-rows: 1fr;
+  padding: 8px;
+  grid-gap: 8px;
+}
+
+.block.scroll-x {
+  display: flex;
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.box {
+  background-image: linear-gradient(90deg, var(--primary-01), var(--primary03));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+.block > .box {
+  :;
+  olumn; */
+  background-image: linear-gradient(90deg, var(--primary-01), var(--primary03));
+  display: block;
+  padding: 0;
+  background-size: 200% 200%;
+  overflow: hidden;
+  box-shadow: 0 0 5px 1px var(--border), 0 2px 0 0 var(--primary05);
+  border-radius: 2px;
+  position: relative;
+  height: 230px;
+  margin: 1px 3px;
+  transition: 1.3s;
+  border: 1px solid var(--border);
+}
+.block.scroll-x {
+  display: flex;
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.block.scroll-x > .box {
+  overflow: visible;
+  max-width: 124px;
+}
+.thumb {
+  position: relative;
+  width: 90px;
+  max-height: 90px;
+  overflow: hidden;
+}
+.block > .box > .thumb {
+  height: 100%;
+  max-height: unset;
+  position: relative;
+  color: white;
+  background-blend-mode: luminosity;
+  width: 100%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb img {
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+.block > .box > .info-list {
+
+  position: absolute;
+
+  bottom: 0;
+}
+
+.box-type {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: var(--gray-300);
+  color: var(--gray-900);
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: var(--border-radius);
+  box-shadow: 1px 1px 2px 1px var(--secondary-color);
+}
+.block > .box > .info-list > .list-name{
+
+  text-align: center;
+
+  text-overflow: unset;
+
+  white-space: normal;
+
+  background: var(--gray-200);
+
+  opacity: 0.9;
+}
+.list-name {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 6px 3px 1px 0px;
+  text-align: left;
+  color: var(--primary09);
+  font-weight: bold;
+}
+.list-name a {
+  color: unset;
+}
+.mota {
+  white-space: normal;
+  text-align: left;
+  word-break: break-word;
+  max-height: 80px;
+  font-size: 0.8em;
+  color: var(--muted);
+  overflow: hidden;
+}
+.box .info-list {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  max-height: 100%;
+  width: 100%;
+  color: var(--text);
+}
+
+.list-time { 
+  font-size: 12px;
+  color: var(--secondary-color);
+}
+.list > .box {
+  flex-direction: row;
+  align-items: center;
+  border: 0px;
+  box-shadow: 0 0 0;
+  margin-top: 10px;
+}
+.list > .box:nth-child(odd) {background: var(--card-background);}
+
+.list > .box > .info-list {
+  position: relative;
+  padding: 0px 5px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.list .list-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.list .list-time {
+  text-align: left;
+}
+.list > .box:nth-child(odd)  .list-name,.list > .box:nth-child(odd)  .list-time {
+  color: var(--gray-900);
+}
+.view-post {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.view-post img,.view-post video {
+  display: block;
+  height: 100%;
+  max-height: 66vh;
+}
+
+.view-post {
+  padding: 8px 2px;
+  position: relative;
+  width: 100%;
+  max-height: 66vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background-view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);
+}
+
+.main-view {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 0;
+  box-shadow: 0px 0px 20px var(--primary02);
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+video {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  max-height: 90vh;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: var(--main-gradient-bg);
+  color: var(--gray-900);
+  margin-top: 10px;
+  position: relative;
+}
+
+/* form elements */
+.title-form {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 0;
+}
+
+.group-input {
+  background: var(--primary-01);
+  border-top: 1px solid var(--dark-body);
+  padding: 13px 6px;
+}
+
+.group-input > label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--primary-bg-color);
+}
+
+.group-input > input, 
+.group-input > textarea {
+  border: 0;
+  padding: 13px 7px 6px 7px;
+  background: var(--card-background);
+  width: 100%;
+  border-bottom: 1px solid var(--primary-bg-color);
+  color: var(--gray-900);
+  font-size: 1em;
+}
+
+input[type="submit"] {padding: 5px 10px;background: var(--primary-transparent);color: var(--primary-bg-color);border: 1px solid var(--primary-01);border-radius: 4px;cursor: pointer;margin-top: 6px;}
+
+textarea {
+  height: 200px;
+  max-height: 500px;
+  padding: 1px 5px;
+}
+.checkbox {
+
+}
+.checkbox input {
+  display: inline;
+  width: unset;
+}
+
+/* utility classes */
+.btn {
+  color: var(--primary-bg-color);
+  background: var(--primary-02);
+  border: 1px solid var(--primary-01);
+  padding: 7px;
+  margin: 2px 5px 5px 5px;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.love.btn {
+  background: unset !important;
+  color: var(--color);
+  border: 1px solid var(--secondary-05);
+}
+
+.love.btn[love="love"] {
+  background: red !important;
+  color: white;
+  border: 1px solid red;
+}
+
+.flip { flex-direction: row-reverse; }
+.daxoda { background:#ffd4c6 !important; }
+.thungrac { background: var(--yellow) !important; }
+
+/* responsive */
+@media (max-width: 768px) {
+  .wrapper, .flip { flex-direction: column; }
+  .block { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+}
+
+@media (min-width: 768px) {
+  .left { max-width: 500px; }
+}
+/* dropzone */
+#dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* progress bar */
+.progress-bar {
+  background-color: #ff9800;
+  margin: 5px auto;
+  border-radius: 6px;
+  overflow: scroll;
+  transition: 0.2s;
+}
+.progress-bar div {
+  width: 0;
+  height: 20px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 20px;
+  color: black;
+  white-space: pre;
+  padding: 0 3px;
+  transition: 1s;
+  text-align: left;
+}
+.progress-bar-fill {
+  overflow-y: clip;
+}
+/* windows style modal */
+._view {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* windows style container */
+.v_container {
+  /* background-color: var(--primary-bg-color); */
+  width: calc(100% - 60px);
+  max-width: 800px;
+  margin: 30px auto;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center center;
+  transform: scale(0.9);
+  box-shadow: 0 0 5px 8px var(--primary-02);
+  color: var(--text-color);
+  border: 1px solid var(--primary05);
+  border-radius: 4px;
+}
+
+/* windows style header */
+.v_header {
+  padding: 8px 12px;
+  background: var(--primary09);
+  display: flex;
+  align-items: center;
+  cursor: move;
+  user-select: none;
+}
+
+/* windows style title */
+.vh_name {
+  color: var(--yellow);
+  font-size: 14px;
+  font-weight: 500;
+  width: calc(100% - 60px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'segoe ui', arial, sans-serif;
+}
+
+/* windows style body */
+.v_body {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px;
+  background: var(--main-gradient-bg);
+}
+
+/* windows style close button */
+.v_close {
+  background: var(--primary05);
+  cursor: pointer;
+  width: 40px;
+  height: 32px;
+  color: white;
+  font-size: 20px;
+  margin-left: auto;
+  text-align: center;
+  line-height: 26px;
+}
+
+.v_close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* false state - giữ nguyên như cũ */
+.false._view {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.false .v_container {
+  border-color: #ff5722;
+  background-color: #180000;
+  color: #ff8f8f;
+}
+
+.false .v_header {
+  background: linear-gradient(to right, #320200, #1a0100);
+}
+
+.false .vh_name {
+  color: #ffb1b1;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  .v_container {
+    width: calc(100% - 30px);
+    margin: 15px auto;
+  }
+  
+  .v_body {
+    max-height: 70vh;
+    padding: 15px;
+  }
+}
+
+/* animation khi mở cửa sổ */
+._view.active {
+  opacity: 1;
+}
+
+._view.active .v_container {
+  transform: scale(1);
+}
+
+/* tắt scroll khi modal mở */
+body.hide-scroll {
+  overflow: hidden;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+
+  .nav-menu {
+    /* flex-direction: column; */
+    /* align-items: center; */
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .flip {
+    flex-direction: column-reverse;
+  }
+  .block {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .left {
+    max-width: 500px;
+  }
+}
+.panel {display: inline-block;color: var(--primary-bg-color);background: var(--primary-02);border: 1px solid var(--primary-01);padding: 6px 10px;margin: 5px 2px;border-radius: 5px;transition: background 0.3s;}
+.panel a {
+  background: var(--box-background);
+  padding: 2px 6px;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  min-width: 20px;
+  color: var(--secondary-color);
+  margin: 0px 4px;
+}
+select.menu {
+  width:100%;margin:0;
+}
+.daxoa {
+  background:#ffd4c6 !important;
+}
+.daxoa a, .daxoa .list-name,.daxoa .list-time {
+  color: red !important;
+}
+.thungrac {
+  background: #ffeb3b !important;
+}
+/* dropzone */
+#dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* progress bar */
+.progress-bar {
+  background-color: #ff9800;
+  margin: 5px auto;
+  border-radius: 6px;
+  overflow: scroll;
+  transition: 0.2s;
+}
+.progress-bar div {
+  width: 0;
+  height: 20px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 20px;
+  color: black;
+  white-space: pre;
+  padding: 0 3px;
+  transition: 1s;
+  text-align: left;
+}
+.progress-bar-fill {
+  overflow-y: clip;
+}
+.viewed-marker {
+  background: var(--box-background);
+  border-radius: var(--border-radius);
+  position: absolute;
+  padding: 3px;
+  right: 0;
+  top: 0;
+}
+.fail,.succ {
+  padding: 11px 5px;
+  background: var(--primary-bg-color);
+  color: var(--dark-theme);
+}
+.succ {
+  background: var(--yellow);
+  color: var(--gray-200);
+}
+.form-alert.succ {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-family: arial, sans-serif;
+}
+
+.form-alert.succ ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.form-alert.succ h1 {
+  color: #155724; /* màu chữ của tiêu đề */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-alert.succ li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-alert.succ hr {
+  border: 0;
+  height: 1px;
+  background-color: #c3e6cb;
+  margin-bottom: 15px;
+}
+
+.form-alert.succ br {
+  display: block;
+  margin-bottom: 15px;
+}
+.content-text {
+  line-height: 2;
+  font-size: 1.6em;
+}
