@@ -422,7 +422,7 @@ ob_start();
                 $config_content .= "define('db_user', '$db_user');\n";
                 $config_content .= "define('db_pass', '$db_pass');\n";
                 $config_content .= "define('db_name', '$db_name');\n";
-                $config_content .= "define('webadmin', '$webadmin');\n";
+                $config_content .= '$webadminconfig= "'.$webadmin.'";';
                 $config_content .= "?>";
                 
                 if (file_put_contents('_db_config.php', $config_content) === false) {
@@ -602,4 +602,5 @@ ob_start();
             <?php endif; ?>
         </div>
     </body>
+
     </html>
