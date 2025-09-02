@@ -54,9 +54,10 @@
                     
                 } else {
                     // Nội dung mặc định khi không có trang cụ thể được yêu cầu
-                    include('index.php' );
+                    include('./pages/index.php' );
                 }
             ?>
 
     </div>
 </div>
+
