@@ -5,7 +5,7 @@ if(!$config_file_exists) {
     exit();
 }
 $webadmin = $_COOKIE['webadmin'] ?? null;
-$passadmin = defined('webadmin') ? webadmin : '127001';
+$passadmin = $webadminconfig ?? '127001';
 if($webadmin != $passadmin) {
     include_once 'config/config.php';
     include_once 'webadmin.php';
@@ -50,3 +50,4 @@ if($webadmin != $passadmin) {
     </div>
 </body>
 </html>
+
