@@ -1,4 +1,5 @@
 <?php
+include_once '../_db_config.php';
 $config_file_exists = file_exists('../_db_config.php');
 if(!$config_file_exists) {
     header("location: /install.php");
@@ -50,4 +51,5 @@ if($webadmin != $passadmin) {
     </div>
 </body>
 </html>
+
 
