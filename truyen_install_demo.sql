@@ -41,9 +41,9 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`id_admin`, `ten`, `email`, `matkhau`, `avatar`, `role_id`) VALUES
-(1, 'admin', 'stackskill2@gmail.com', '123456', NULL, 1),
-(2, 'thành hiếu nguyen', 'a123@gmail.com', '123456', NULL, 2),
-(8, 'Nam', 'nam410@gmail.com', '123456', NULL, 2);
+(1, 'admin', 'admin@x', '123456', NULL, 1),
+(2, 'mod', 'admin@x1', '123456', NULL, 2),
+(8, 'mod', 'admin@x2', '123456', NULL, 2);
 
 -- --------------------------------------------------------
 
