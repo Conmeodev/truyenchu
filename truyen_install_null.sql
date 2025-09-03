@@ -41,10 +41,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`id_admin`, `ten`, `email`, `matkhau`, `avatar`, `role_id`) VALUES
-(1, 'admin', 'admin@x', '123456', NULL, 1),
-(2, 'dev', 'daylanoidungkhongcotaht', '123456', NULL, 2),
-(8, 'dev', 'daylanoidungkhongcotaht', '123456', NULL, 2),
-(9, 'dev', 'daylanoidungkhongcotaht', '123456', NULL, 3);
+(1, 'admin', 'admin@x', '123456', NULL, 1);
 
 -- --------------------------------------------------------
 
