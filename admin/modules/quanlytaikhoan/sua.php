@@ -17,10 +17,11 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             // Lấy dữ liệu mới từ form
             $ten_moi = mysqli_real_escape_string($mysqli, $_POST['ten']);
             $email_moi = mysqli_real_escape_string($mysqli, $_POST['email']);
+            $matkhau_moi = mysqli_real_escape_string($mysqli, $_POST['matkhau']);
             $role_id_moi = mysqli_real_escape_string($mysqli, $_POST['role_id']);
             
             // Thực hiện cập nhật thông tin người dùng
-            $update_sql = "UPDATE tbl_admin SET ten='$ten_moi', email='$email_moi', role_id=$role_id_moi WHERE id_admin = $id_admin";
+            $update_sql = "UPDATE tbl_admin SET ten='$ten_moi', email='$email_moi', matkhau='$matkhau_moi', role_id=$role_id_moi WHERE id_admin = $id_admin";
             $update_result = mysqli_query($mysqli, $update_sql);
 
             if ($update_result) {
@@ -43,14 +44,18 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 <body>
     <div class="container mt-4">
         <h2>Sửa người dùng</h2>
-        <form method="POST" action="index.php?action=quanlytaikhoan&query=xuly&id=<?php echo $_GET['id']?>">
+        <form method="POST" action="index.php?action=quanlytaikhoan&query=sua&id=<?php echo $_GET['id']?>">
             <div class="form-group">
                 <label for="ten">Tên:</label>
-                <input type="text" class="form-control" id="ten" name="ten" value="<?php echo $row['ten']; ?>" required>
+                <input type="text" class="form-control" id="ten" name="ten" value="<?php echo $_POST['ten'] ?? $row['ten']; ?>" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" value="<?php echo $row['email']; ?>" required>
+                <input type="email" class="form-control" id="email" name="email" value="<?php echo $_POST['email'] ?? $row['email']; ?>" required>
+            </div>
+            <div class="form-group">
+                <label for="matkhau">Mật Khẩu :</label>
+                <input type="matkhau" class="form-control" id="matkhau" name="matkhau" value="<?php echo $_POST['matkhau'] ?? $row['matkhau']; ?>" required>
             </div>
             <div class="form-group">
                 <label for="role_id">Role ID:</label>
