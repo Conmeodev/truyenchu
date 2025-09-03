@@ -8,7 +8,6 @@ Liên hệ gmail: linkbattu@gmail.com
         <div class="copyright">Conmeodev @ Copyright <?php echo date("Y");?></div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="/main.js?<?php echo $time;?>"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const element = $('#dropzone');
@@ -18,4 +17,5 @@ Liên hệ gmail: linkbattu@gmail.com
         });
     </script>
 </body>
+
 </html>
